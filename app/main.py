@@ -20,7 +20,7 @@ app.add_url_rule(
 
 
 if __name__ == "__main__":
-    drop_data_base_if_exists()
-    initate_db()
-    init_data()
+    # drop_data_base_if_exists()
+    # initate_db()
+    # init_data()
     app.run()
