@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from app.settings.psql_config import Base
+from sqlalchemy.orm import relationship
 
 
 class Country(Base):
@@ -9,4 +10,5 @@ class Country(Base):
    capital = Column(String)
    name = Column(String)
 
+   vacations = relationship("Vacation", back_populates="country")
 
